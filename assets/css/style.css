@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    45deg,
+    #4d0506 0%,
+    #161a1d calc(60% + 1px),
+    #161a1d 100%
+  ) no-repeat;
+  transform: translateZ(0);
+  overflow-x: hidden;
+}
+
+/* Custom navbar */
+nav.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  font-family: "Roboto Mono", monospace;
+  z-index: 999;
+}
+
+nav.navbar > div {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-bottom: 1px solid #736b7a15;
+}
+nav.navbar > div.navs {
+  box-sizing: border-box;
+}
+
+nav.navbar > div > ul.nav-links {
+  margin-left: auto;
+}
+
+nav.navbar > div > ul > li {
+  display: inline;
+  margin-right: 25px;
+}
+
+nav.navbar > div > ul > li > a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+nav.navbar > div > ul.nav-logo > li > a {
+  font-weight: 700;
+  letter-spacing: -0.07em;
+}
+nav.navbar > div > ul.nav-links > li > a {
+  font-weight: 400;
+}
+
+nav.navbar > div > ul.nav-links > li > a.selected {
+  color: #ba1200;
+}
+
+nav.navbar > div > ul > li > a::first-letter {
+  font-weight: 700;
+  font-size: 200%;
+}
+
+a {
+  text-decoration: none;
+}

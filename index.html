@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navs">
+        <ul class="nav-logo">
+          <li><a href="#home">BATTLEIA</a></li>
+        </ul>
+        <ul class="nav-links">
+          <li><a href="#home" class="selected">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="intro">
+      <div class="welcome-container">
+        <div class="welcome">
+          <h1>BattleIA</h1>
+          <p>BattleIA is an innovative game</p>
+          <img src="./assets/img/cross.svg" class="top-left" />
+          <img src="./assets/img/cross.svg" class="bottom-right" />
+          <a href="/game.html">PLAY NOW !</a>
+        </div>
+      </div>
+      <div id="shiprender"></div>
+      <div class="scrolldown-container">
+        <div class="scrolldown">
+          <img src="./assets/img/mousedown.svg" />
+          <p>Scroll down for more</p>
+        </div>
+      </div>
+      <!--<div id="particlerenderer"></div>-->
+    </section>
+    <section class="features">
+
+    </section>
+    <script src="node_modules/three/build/three.js"></script>
+    <script src="node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="assets/script/model.js"></script>
+  </body>
+</html>

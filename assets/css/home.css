@@ -1,0 +1,105 @@
+section {
+  width: 100vw;
+}
+section#intro {
+  height: 100vh;
+  position: relative;
+}
+
+section#intro > div.welcome-container {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  width: 40vw;
+}
+
+section#intro > div.welcome-container > div.welcome {
+  position: relative;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.842);
+  padding: 50px;
+  font-family: "Roboto Mono", monospace;
+}
+
+section#intro > div.welcome-container > div.welcome > h1 {
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+section#intro > div.welcome-container > div.welcome > p {
+  margin: 0;
+}
+
+section#intro > div.welcome-container > div.welcome > a {
+  color: #ba1200;
+  border: 1px solid #ba1200;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: block;
+  max-width: fit-content;
+  transition: 0.3s all;
+}
+section#intro > div.welcome-container > div.welcome > a:hover {
+  color: white;
+  background: #ba1200;
+}
+
+section#intro > div.welcome-container > div.welcome > img {
+  margin: 0;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+section#intro > div.welcome-container > div.welcome > img.top-left {
+  top: 15px;
+  left: 15px;
+}
+section#intro > div.welcome-container > div.welcome > img.bottom-right {
+  bottom: 15px;
+  right: 15px;
+}
+section#intro > div#shiprender {
+  position: absolute;
+  top: 20vh;
+  right: 0;
+  width: 30vw;
+  height: 30vh;
+}
+
+section#intro > div#particlerenderer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+section#intro > div.scrolldown-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  box-sizing: content-box;
+}
+
+section#intro > div.scrolldown-container > div.scrolldown {
+  width: 5vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+section#intro > div.scrolldown-container > div.scrolldown > img {
+  max-width: 100%;
+  margin: 0;
+  color: white;
+  fill: white;
+}
+section#intro > div.scrolldown-container > div.scrolldown > p {
+  color: white;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  font-size: 0.3em;
+  text-align: center;
+}
