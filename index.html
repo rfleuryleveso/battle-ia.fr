@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -15,121 +15,122 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="navs">
-      <ul class="nav-logo">
-        <li><a href="#home">BATTLEIA</a></li>
-      </ul>
-      <ul class="nav-links">
-        <li><a href="#home" class="selected">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </div>
-  </nav>
-  <section id="intro">
-    <div class="welcome-container">
-      <div class="welcome">
-        <h1>BattleIA</h1>
-        <p>BattleIA is an innovative game</p>
-        <img src="./assets/img/cross.svg" class="top-left" />
-        <img src="./assets/img/cross.svg" class="bottom-right" />
-        <a href="/game.html">PLAY NOW !</a>
-      </div>
-    </div>
-    <div id="shiprender"></div>
-    <div class="scrolldown-container">
-      <div class="scrolldown">
-        <img src="./assets/img/mousedown.svg" />
-        <p>Scroll down for more</p>
-      </div>
-    </div>
-    <!--<div id="particlerenderer"></div>-->
-  </section>
-  <section class="features">
-    <section id="how_section">
-      <h2>How it works</h2>
-      <h3>Ground</h3>
-      <p>
-        The ground is made up of rectangular huts, it is entirely bordered by
-        walls. The surface of the ground is not known by the BOT! A BOT occupies
-        one square. One unit of energy occupies one square.
-      </p>
-      <h3>Simulation</h3>
-      <p>
-        A game round consists of a communication sequence between the simulator
-        and a bot. Simulator: executes the energy consumption for a BOT BOT:
-        determines the terrain scan level from 0 to 255 Simulator: scanning
-        takes place BOT : Determines an action (none, move, shoot, shield, hide,
-        ...)
-      </p>
-      <h3>Bot caracteristics</h3>
-      <p>
-        A BOT has only one life. He loses his life if his energy level drops to
-        zero. It is simply disconnected from the server. Each BOT starts with
-        100 units of energy. A BOT has lost if its energy reserve falls to zero.
-        There is no limit to energy storage There is a loss of at least 1 unit
-        of energy for each turn, even without any detection or action taken.
-      </p>
-      <h3>Item caracteristics</h3>
-      <h4>Energy capsules</h4>
-      <p>
-        On the playground, it is possible to find energy capsules. Simply pass
-        over an energy capsule to retrieve its contents. Energy capsules will
-        appear randomly on the field.
-      </p>
-      <h4>Protection</h4>
-      <p>
-        It is possible to activate a protective shield. It will be assigned a
-        certain power level, which will be deducted in energy units for
-        activation. At each turn it will consume 1 unit of energy to maintain
-        its power level. If you take 1 hit, it loses 1 unit of power. If its
-        power drops to zero, it is then inactive.
-      </p>
-      <h4>Cloaks</h4>
-      <p>
-        It's possible to make yourself invisible by activating an occulting
-        field. It will be assigned a certain level of power which will be
-        deducted in units of energy for activation. This power level is the
-        distance at which the occulting field is active.
-      </p>
-      <h3>Move rules</h3>
-      <p>
-        It is possible to move one box in the 4 directions : north, south, east
-        and west. The box must be empty or contain an energy capsule. If the box
-        contains an energy capsule: the energy contained in this capsule is then
-        absorbed. If the box is occupied by a block: loss of 1 in energy If the
-        box is occupied by another Bot, each Bot loses one in energy.
-      </p>
+    <nav class="navbar">
+        <div class="navs">
+            <ul class="nav-logo">
+                <li><a href="#home">BATTLEIA</a></li>
+            </ul>
+            <ul class="nav-links">
+                <li><a href="#home" class="selected">Home</a></li>
+                <li><a href="#How">How it works</a></li>
+                <li><a href="#Download">Download</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="intro">
+        <div class="welcome-container">
+            <div class="welcome">
+                <h1>BattleIA</h1>
+                <p>BattleIA is an innovative game</p>
+                <img src="./assets/img/cross.svg" class="top-left" />
+                <img src="./assets/img/cross.svg" class="bottom-right" />
+                <a href="/game.html">PLAY NOW !</a>
+            </div>
+        </div>
+        <div id="shiprender"></div>
+        <div class="scrolldown-container">
+            <div class="scrolldown">
+                <img src="./assets/img/mousedown.svg" />
+                <p>Scroll down for more</p>
+            </div>
+        </div>
+        <!--<div id="particlerenderer"></div>-->
     </section>
-    <section id="downloadSection">
-      <h2>Download</h2>
-      <p>
-      <h3>To download the game click
-        <a href="https://github.com/blenderlab/BattleIA" class="dl">here</a>.</h3><br />
-      <img src="assets\img\HowDL.png" alt="Picture to show how to download" />
-      </p>
+    <section class="features">
+        <section id="how_section">
+            <h2>How it works</h2>
+            <h3>Ground</h3>
+            <p>
+                The ground is made up of rectangular huts, it is entirely bordered by
+                walls. The surface of the ground is not known by the BOT! A BOT occupies
+                one square. One unit of energy occupies one square.
+            </p>
+            <h3>Simulation</h3>
+            <p>
+                A game round consists of a communication sequence between the simulator
+                and a bot. Simulator: executes the energy consumption for a BOT BOT:
+                determines the terrain scan level from 0 to 255 Simulator: scanning
+                takes place BOT : Determines an action (none, move, shoot, shield, hide,
+                ...)
+            </p>
+            <h3>Bot caracteristics</h3>
+            <p>
+                A BOT has only one life. He loses his life if his energy level drops to
+                zero. It is simply disconnected from the server. Each BOT starts with
+                100 units of energy. A BOT has lost if its energy reserve falls to zero.
+                There is no limit to energy storage There is a loss of at least 1 unit
+                of energy for each turn, even without any detection or action taken.
+            </p>
+            <h3>Item caracteristics</h3>
+            <h4>Energy capsules</h4>
+            <p>
+                On the playground, it is possible to find energy capsules. Simply pass
+                over an energy capsule to retrieve its contents. Energy capsules will
+                appear randomly on the field.
+            </p>
+            <h4>Protection</h4>
+            <p>
+                It is possible to activate a protective shield. It will be assigned a
+                certain power level, which will be deducted in energy units for
+                activation. At each turn it will consume 1 unit of energy to maintain
+                its power level. If you take 1 hit, it loses 1 unit of power. If its
+                power drops to zero, it is then inactive.
+            </p>
+            <h4>Cloaks</h4>
+            <p>
+                It's possible to make yourself invisible by activating an occulting
+                field. It will be assigned a certain level of power which will be
+                deducted in units of energy for activation. This power level is the
+                distance at which the occulting field is active.
+            </p>
+            <h3>Move rules</h3>
+            <p>
+                It is possible to move one box in the 4 directions : north, south, east
+                and west. The box must be empty or contain an energy capsule. If the box
+                contains an energy capsule: the energy contained in this capsule is then
+                absorbed. If the box is occupied by a block: loss of 1 in energy If the
+                box is occupied by another Bot, each Bot loses one in energy.
+            </p>
+        </section>
+        <section id="downloadSection">
+            <h2>Download</h2>
+            <p>
+                <h3>
+                    To download the game click
+                    <a href="https://github.com/blenderlab/BattleIA" class="dl">here</a>.
+                </h3><br />
+                <img src="assets\img\HowDL.png" alt="Picture to show how to download" />
+            </p>
+        </section>
     </section>
-  </section>
-  <script src="node_modules/three/build/three.js"></script>
-  <script src="node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
-  <script src="assets/script/model.js"></script>
+    <script src="node_modules/three/build/three.js"></script>
+    <script src="node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="assets/script/model.js"></script>
+    <foot>
+        <hr />
+        <nav id="footAEnd">
+            <ul>
+                <li><a href="cu.html">Condition d'utilisation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+            </ul>
+        </nav>
+
+        <div id="logoEnd">
+            <p>site design / logo © 2020 ADI_ISEN;</p>
+        </div>
+
+    </foot>
 </body>
-<foot>
-  <hr />
-  <nav id="footAEnd">
-    <ul>
-      <li><a href="cu.html">Condition d'utilisation</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="apropos.html">A propos</a></li>
-    </ul>
-  </nav>
-
-  <div id="logoEnd">
-    <p>site design / logo © 2020 ADI_ISEN;</p>
-  </div>
- 
-</foot>
-
 </html>

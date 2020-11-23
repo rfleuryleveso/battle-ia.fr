@@ -110,7 +110,6 @@ section#intro > div.scrolldown-container > div.scrolldown > p {
 
 
 
-
 /* SECTIONS */
 
 section#home_section {
@@ -137,6 +136,8 @@ section#home_section > div.slogan > p {
 
 section#how_section {
   padding: 10vh 10vw;
+  box-sizing : border-box;
+  text-align: justify
 }
 
 section#how_section > p{
@@ -162,6 +163,7 @@ section#howSection > h4 {
 
 section#downloadSection {
   padding: 10vh 10vw;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -214,10 +216,12 @@ foot{
   color: aliceblue;
 }
 
-#footAEnd{
-  position: relative;
-  display: inline;
-  margin: auto;
+#footAEnd {
+   /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;*/
+    position: relative;
+    display: inline;
+    margin: auto;
 }
 #footAEnd > ul > li{
   font-size: 120%;
