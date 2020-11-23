@@ -1,0 +1,23 @@
+{
+  "name": "battle-ia.fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfleuryleveso/battle-ia.fr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfleuryleveso/battle-ia.fr/issues"
+  },
+  "homepage": "https://github.com/rfleuryleveso/battle-ia.fr#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "three": "^0.122.0"
+  }
+}
