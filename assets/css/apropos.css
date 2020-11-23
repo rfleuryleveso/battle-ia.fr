@@ -1,15 +1,28 @@
+/* le block conteneur */
+.marquee-rtl {
+    max-width: 30em;
+    /* largeur de la fenêtre */
+    margin: 1em auto 2em;
+
+    overflow: hidden;
+    /* masque tout ce qui dépasse */
+
+}
+
+/* le bloc défilant */
 .marquee-rtl> :first-child {
     display: block;
     /* modèle de boîte en ligne */
     padding-bottom: 2em;
+    padding: ;
     /* un peu d'espace pour la transition */
     padding-top: 100%;
     /* placement à droite du conteneur */
-    animation: casting 15s infinite linear;
+    animation: defilement-rtl 15s infinite linear;
 
-    animation-name: casting;
+    animation-name: defilement-rtl;
     /* référence à la règle @keyframes mise en oeuvre */
-    animation-delay: 15s;
+    animation-delay: 0.2s;
     /* valeur à ajuster suivant la longueur du message */
     animation-iteration-count: infinite;
     /* boucle continue */
@@ -17,14 +30,14 @@
     /* pas vraiment utile ici */
 }
 
-@keyframes casting {
+@keyframes defilement-rtl {
     0% {
         transform: translate3d(0, 0, 0);
         /* position initiale à droite */
     }
 
     100% {
-        transform: translate3d(-100%, 0, 0);
+        transform: translate3d(0, -100%, 0);
         /* position finale à gauche */
     }
 }
