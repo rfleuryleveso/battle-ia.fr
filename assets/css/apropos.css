@@ -1,0 +1,30 @@
+.marquee-rtl> :first-child {
+    display: block;
+    /* modèle de boîte en ligne */
+    padding-bottom: 2em;
+    /* un peu d'espace pour la transition */
+    padding-top: 100%;
+    /* placement à droite du conteneur */
+    animation: casting 15s infinite linear;
+
+    animation-name: casting;
+    /* référence à la règle @keyframes mise en oeuvre */
+    animation-delay: 15s;
+    /* valeur à ajuster suivant la longueur du message */
+    animation-iteration-count: infinite;
+    /* boucle continue */
+    animation-timing-function: linear;
+    /* pas vraiment utile ici */
+}
+
+@keyframes casting {
+    0% {
+        transform: translate3d(0, 0, 0);
+        /* position initiale à droite */
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+        /* position finale à gauche */
+    }
+}

@@ -1,86 +1,92 @@
-html{
-  color: white;
+html {
+    color: white;
 }
+
 section {
-  width: 100vw;
+    width: 100vw;
 }
+
 section#intro {
-  height: 100vh;
+    height: 100vh;
 }
 
-section#intro > div.welcome-container {
-  position: absolute;
-  top: 20vh;
-  left: 10vw;
-  width: 40vw;
+section#intro>div.welcome-container {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    width: 40vw;
 }
 
-section#intro > div.welcome-container > div.welcome {
+section#intro>div.welcome-container>div.welcome {
+    position: relative;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.842);
+    padding: 50px;
+    font-family: "Roboto Mono", monospace;
+    color: #000000;
+}
+
+section#intro>div.welcome-container>div.welcome>h1 {
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+section#intro>div.welcome-container>div.welcome>p {
+    margin: 0;
+}
+
+section#intro>div.welcome-container>div.welcome>a {
+    color: #ba1200;
+    border: 1px solid #ba1200;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    display: block;
+    max-width: fit-content;
+    transition: 0.3s all;
+}
+
+section#intro>div.welcome-container>div.welcome>a:hover {
+    color: white;
+    background: #ba1200;
+}
+
+section#intro>div.welcome-container>div.welcome>img {
+    margin: 0;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+section#intro>div.welcome-container>div.welcome>img.top-left {
+    top: 15px;
+    left: 15px;
+}
+
+section#intro>div.welcome-container>div.welcome>img.bottom-right {
+    bottom: 15px;
+    right: 15px;
+}
+
+section#intro>div#shiprender {
+    position: absolute;
+    top: 20vh;
+    right: 0;
+    width: 30vw;
+    height: 30vh;
+}
+
+section#intro>div#particlerenderer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/*section#intro > div.scrolldown-container {
   position: relative;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.842);
-  padding: 50px;
-  font-family: "Roboto Mono", monospace;
-  color: #000000;
-}
-
-section#intro > div.welcome-container > div.welcome > h1 {
-  margin: 10px 0 0 0;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-section#intro > div.welcome-container > div.welcome > p {
-  margin: 0;
-}
-
-section#intro > div.welcome-container > div.welcome > a {
-  color: #ba1200;
-  border: 1px solid #ba1200;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  margin-top: 20px;
-  display: block;
-  max-width: fit-content;
-  transition: 0.3s all;
-}
-section#intro > div.welcome-container > div.welcome > a:hover {
-  color: white;
-  background: #ba1200;
-}
-
-section#intro > div.welcome-container > div.welcome > img {
-  margin: 0;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-}
-
-section#intro > div.welcome-container > div.welcome > img.top-left {
-  top: 15px;
-  left: 15px;
-}
-section#intro > div.welcome-container > div.welcome > img.bottom-right {
-  bottom: 15px;
-  right: 15px;
-}
-section#intro > div#shiprender {
-  position: absolute;
-  top: 20vh;
-  right: 0;
-  width: 30vw;
-  height: 30vh;
-}
-
-section#intro > div#particlerenderer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-section#intro > div.scrolldown-container {
-  position: absolute;
   width: 100%;
   bottom: 0;
   box-sizing: content-box;
@@ -112,129 +118,141 @@ section#intro > div.scrolldown-container > div.scrolldown > p {
 
 /* SECTIONS */
 
-section#home_section {
-  background: url("../img/pexels-kaboompics-com-6069.jpg");
-  background-size: cover;
-  background-position: center; 
-  padding: 10vh 10vw;
-  width: 100%; 
-  box-sizing: border-box;
+section#intro {
+    background: url("../img/pexels-kaboompics-com-6069.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10vh 10vw;
+    width: 100%;
+    box-sizing: border-box;
 }
-section#home_section > div.slogan {
-  color: white;
-  max-width: 100%;
-  margin: 33vh auto 0 auto;
+
+section#intro>div.slogan {
+    color: white;
+    max-width: 100%;
+    margin: 33vh auto 0 auto;
 }
-section#home_section > div.slogan > h1 {
-  font-size: 3em;
-  margin: 0;
+
+section#intro>div.slogan>h1 {
+    font-size: 3em;
+    margin: 0;
 }
-section#home_section > div.slogan > p {
-  font-weight: 100;
-  margin: 0;
+
+section#intro>div.slogan>p {
+    font-weight: 100;
+    margin: 0;
 }
 
 section#how_section {
-  padding: 10vh 10vw;
-  box-sizing : border-box;
-  text-align: justify
+    padding: 10vh 10vw;
+    box-sizing: border-box;
+    text-align: justify
 }
 
-section#how_section > p{
-  margin: 0 0 25px 0;
-  font-weight: 300;
+section#how_section>p {
+    margin: 0 0 25px 0;
+    font-weight: 300;
 }
 
-section#how_section > h2{
-  text-align: center;
-  font-weight: 200;
-  text-transform: uppercase;
+section#how_section>h2 {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
-section#howSection > h3{
-  margin: 0 0 3px 0;
-  text-transform: uppercase;
+section#howSection>h3 {
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
 }
 
-section#howSection > h4 {
-  margin: 0;
-  text-transform: uppercase;
+section#howSection>h4 {
+    margin: 0;
+    text-transform: uppercase;
 }
 
-section#downloadSection {
-  padding: 10vh 10vw;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-
-
-section#downloadSection > p {
-  margin: 0 0 25px 0;
-  font-weight: 300;
-}
-
-section#download_section > h2 {
-  text-align: center;
-  font-weight: 200;
-  text-transform: uppercase;
-}
-
-section#download_section > h3 {
-  margin: 0 0 3px 0;
-  text-transform: uppercase;
-}
-
-
-#downloadSection > h3 > a{
-  color: white;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-#downloadSection > h3 > a:hover{
-  text-decoration: none;
-  color: rgb(201, 201, 201);
+section#download_section {
+    padding: 10vh 10vw;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 
 
-
-
-
-foot > hr{
-  border-bottom: black;
-}
-#logoEnd > p{    
-  text-align: center;
-  font-size: 80%;
+section#download_section>p {
+    margin: 0 0 25px 0;
+    font-weight: 300;
 }
 
-foot{
-  background: #161a1d;
-  padding-top: 0.5%;
-  color: aliceblue;
+section#download_section>h2 {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+section#download_section>h3 {
+    margin: 0 0 3px 0;
+    text-transform: uppercase;
+}
+
+
+#download_section>h3>a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#download_section>h3>a:hover {
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+}
+
+
+
+
+
+
+foot>hr {
+    border-bottom: black;
+}
+
+#logoEnd>p {
+    text-align: center;
+    font-size: 80%;
+}
+
+foot {
+    background: #161a1d;
+    padding-top: 0.5%;
+    color: aliceblue;
 }
 
 #footAEnd {
-   /* display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;*/
+    text-align: center;
     position: relative;
-    display: inline;
+    display: block;
     margin: auto;
 }
-#footAEnd > ul > li{
-  font-size: 120%;
+
+#footAEnd>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+
 }
 
-#footAEnd > ul > li > a{
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+#footAEnd>div {
+    font-size: 120%;
 }
 
-#footAEnd > ul > li > a:hover{
-  text-decoration: none;
-  color: rgb(143, 142, 142);
+#footAEnd>div>a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+#footAEnd>div>a:hover {
+    text-decoration: none;
+    color: rgb(143, 142, 142);
+}

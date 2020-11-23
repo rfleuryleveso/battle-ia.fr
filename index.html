@@ -5,8 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>BattleIA</title>
-  <link rel="icon" type="image/jpg" href="img/iconne.png" />
-  <!--Il faut rajouter l'iconne faite par Paul-->
+  <link rel="icon" type="image/jpg" href="assets/img/iconne.png" />
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
@@ -18,13 +17,13 @@
     <nav class="navbar">
         <div class="navs">
             <ul class="nav-logo">
-                <li><a href="#home">BATTLEIA</a></li>
+                <li><a href="#home"> <img src="assets/img/loggggo.png" class="logo_corner"/> </a></li>
             </ul>
             <ul class="nav-links">
                 <li><a href="#home" class="selected">Home</a></li>
-                <li><a href="#How">How it works</a></li>
-                <li><a href="#Download">Download</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#how_section" >How it works</a></li>
+                <li><a href="#download_section">Download</a></li>
+                <li><a href="#mods">Mods</a></li>
             </ul>
         </div>
     </nav>
@@ -39,12 +38,12 @@
             </div>
         </div>
         <div id="shiprender"></div>
-        <div class="scrolldown-container">
+        <!--<div class="scrolldown-container">
             <div class="scrolldown">
                 <img src="./assets/img/mousedown.svg" />
                 <p>Scroll down for more</p>
             </div>
-        </div>
+        </div>-->
         <!--<div id="particlerenderer"></div>-->
     </section>
     <section class="features">
@@ -103,7 +102,7 @@
                 box is occupied by another Bot, each Bot loses one in energy.
             </p>
         </section>
-        <section id="downloadSection">
+        <section id="download_section">
             <h2>Download</h2>
             <p>
                 <h3>
@@ -113,24 +112,27 @@
                 <img src="assets\img\HowDL.png" alt="Picture to show how to download" />
             </p>
         </section>
+        <section id="mods_section">
+            <h2>Mods</h2>
+        </section>
     </section>
     <script src="node_modules/three/build/three.js"></script>
     <script src="node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
     <script src="assets/script/model.js"></script>
-    <foot>
+    <footer>
         <hr />
-        <nav id="footAEnd">
-            <ul>
-                <li><a href="cu.html">Condition d'utilisation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="apropos.html">A propos</a></li>
-            </ul>
-        </nav>
+        <div id="footAEnd">
+            <div>
+                <a href="cu.html">Condition d'utilisation</a>
+                <a href="contact.html">Contact</a>
+                <a href="apropos.html">A propos</a>
+            </div>
+        </div>
 
         <div id="logoEnd">
             <p>site design / logo © 2020 ADI_ISEN;</p>
         </div>
 
-    </foot>
+    </footer>
 </body>
 </html>
