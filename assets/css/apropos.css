@@ -1,9 +1,9 @@
 /* le block conteneur */
 .marquee-rtl {
-    max-width: 30em;
+    max-width: 100vh;
     /* largeur de la fenêtre */
     margin: 1em auto 2em;
-
+    text-align: center;
     overflow: hidden;
     /* masque tout ce qui dépasse */
 
