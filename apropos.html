@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/apropos.css" />
-
+    <script src="https://kit.fontawesome.com/a59edf1302.js" crossorigin="anonymous"></script>
     <script>
-        function lancer_son() {
+        function jltechOnTheTrack() {
             var audio = document.getElementById('jlSound');
             audio.volume = 1; // on met le son au maximum
             audio.play(); // on lance le son
@@ -25,7 +25,7 @@
 
 <body>
     <div id="retour">
-        <a class="home" href="index.html">Home</a>
+        <a class="home" href="index.html"><i class="fas fa-arrow-circle-left"></i></a>
     </div>
     <!-- le conteneur fenêtre -->
     <div class="marquee-rtl">
@@ -33,16 +33,18 @@
         <div>
             <p>
                 <h1>Website Team</h1>
-                Raphaël Fleury</br>
-                Pierre-Luc Millet</br>
-                Wandrille Guiraud</br>
                 Paul Herbeau</br>
+                Pierre-Luc Millet</br>
+                Raphaël Fleury</br>
+                Wandrille Guiraud</br>
                 Zélie Dufour Hoofd</br>
 
                 <h1>Visual Team</h1>
-                <audio src="\assets\Sound\JLtechonthetrack.mp3" id="jlSound"></audio>
-                <span id="jltech" onclick="jltechOnTheTrack();">Jean-Louis Blervacque</span></br>
                 Clovis Adelaire</br>
+                <audio id="jlSound">
+                    <source src="./assets/Sound/JLtechonthetrack.mp3" type="audio/mp3"></audio>
+                <span id="jltech" onclick="jltechOnTheTrack();">Jean-Louis Blervacque</span></br>
+
 
 
                 <h1>Design Team</h1>
@@ -52,19 +54,19 @@
 
                 <h1>Script Team</h1>
                 Clément Zhu</br>
-                Théo Romary</br>
                 Julien Croppi</br>
+                Théo Romary</br>
 
                 <h1>Algorithm Team</h1>
+                Charles Skorupka</br>
                 Felix Jallageas</br>
                 François d'Harcourt</br>
-                Charles Skorupka</br>
 
                 <h1>Mapping Team</h1>
-                Yanis Boukebir</br>
                 Augustin Desrumaux</br>
-                Etienne El Gueder</br>
                 Emma Koukeb</br>
+                Etienne El Gueder</br>
+                Yanis Boukebir</br>
 
                 <h1>Comment Team</h1>
                 Emma Odet</br>
