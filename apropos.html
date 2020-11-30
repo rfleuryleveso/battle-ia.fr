@@ -13,51 +13,65 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/apropos.css" />
+
+    <script>
+        function lancer_son() {
+            var audio = document.getElementById('jlSound');
+            audio.volume = 1; // on met le son au maximum
+            audio.play(); // on lance le son
+        }
+    </script>
 </head>
 
 <body>
+    <div id="retour">
+        <a class="home" href="index.html">Home</a>
+    </div>
     <!-- le conteneur fenêtre -->
     <div class="marquee-rtl">
         <!-- le contenu défilant -->
         <div>
-            <p>CRAINQUEBILLE
-                I - DE LA MAJESTÉ DES LOIS
-                II - L'AVENTURE DE CRAINQUEBILLE
-                III - CRAINQUEBILLE DEVANT LA JUSTICE
-                IV - APOLOGIE POUR M. LE PRÉSIDENT BOURRICHE
-                V - DE LA SOUMISSION DE CRAINQUEBILLE AUX LOIS DE LA RÉPUBLIQUE
-                VI - CRAINQUEBILLE DEVANT L'OPINION
-                VII - LES CONSÉQUENCES
-                VIII - LES DERNIERES CONSÉQUENCES
-                PUTOIS
-                PARTIE I
-                PARTIE II
-                PARTIE III
-                RIQUET
-                ...
-                PENSÉES DE RIQUET
-                LA CRAVATE
-                ...
-                LES GRANDES MANOEUVRES A MONTIL
-                ...
-                ÉMILE
-                ADRIENNE BUQUET
-                ...
-                LA PIERRE GRAVÉE
-                LA SIGNORA CHIARA
-                ...
-                LES JUGES INTEGRES
-                ...
-                LE CHRIST DE L'OCÉAN
-                ...
-                JEAN MARTEAU
-                I - UN REVE
-                II - LA LOI EST MORTE MAIS LE JUGE EST VIVANT
-                MONSIEUR THOMAS
-                VOL DOMESTIQUE
-                ...
-                EDMÉE OU LA CHARITÉ BIEN PLACÉE
-                ...</p>
+            <p>
+                <h1>Website Team</h1>
+                Raphaël Fleury</br>
+                Pierre-Luc Millet</br>
+                Wandrille Guiraud</br>
+                Paul Herbeau</br>
+                Zélie Dufour Hoofd</br>
+
+                <h1>Visual Team</h1>
+                <audio src="\assets\Sound\JLtechonthetrack.mp3" id="jlSound"></audio>
+                <span id="jltech" onclick="jltechOnTheTrack();">Jean-Louis Blervacque</span></br>
+                Clovis Adelaire</br>
+
+
+                <h1>Design Team</h1>
+                Paul Herbeau</br>
+                Zélie Dufour Hoofd</br>
+
+
+                <h1>Script Team</h1>
+                Clément Zhu</br>
+                Théo Romary</br>
+                Julien Croppi</br>
+
+                <h1>Algorithm Team</h1>
+                Felix Jallageas</br>
+                François d'Harcourt</br>
+                Charles Skorupka</br>
+
+                <h1>Mapping Team</h1>
+                Yanis Boukebir</br>
+                Augustin Desrumaux</br>
+                Etienne El Gueder</br>
+                Emma Koukeb</br>
+
+                <h1>Comment Team</h1>
+                Emma Odet</br>
+                Sacha Binanzer</br>
+                Sylvain Taverniers</br>
+
+            </p>
         </div>
     </div>
 </body>

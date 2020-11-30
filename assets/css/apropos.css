@@ -1,29 +1,29 @@
 /* le block conteneur */
+
 .marquee-rtl {
     max-width: 100vh;
-    /* largeur de la fenêtre */
+    /* largeur de la fenï¿½tre */
     margin: 1em auto 2em;
     text-align: center;
-    overflow: hidden;
-    /* masque tout ce qui dépasse */
-
+    /* masque tout ce qui dï¿½passe */
 }
 
-/* le bloc défilant */
+
+/* le bloc dï¿½filant */
+
 .marquee-rtl> :first-child {
     display: block;
-    /* modèle de boîte en ligne */
+    /* modï¿½le de boï¿½te en ligne */
     padding-bottom: 2em;
-    padding: ;
+    padding: 1%;
     /* un peu d'espace pour la transition */
     padding-top: 100%;
-    /* placement à droite du conteneur */
+    /* placement ï¿½ droite du conteneur */
     animation: defilement-rtl 15s infinite linear;
-
     animation-name: defilement-rtl;
-    /* référence à la règle @keyframes mise en oeuvre */
+    /* rï¿½fï¿½rence ï¿½ la rï¿½gle @keyframes mise en oeuvre */
     animation-delay: 0.2s;
-    /* valeur à ajuster suivant la longueur du message */
+    /* valeur ï¿½ ajuster suivant la longueur du message */
     animation-iteration-count: infinite;
     /* boucle continue */
     animation-timing-function: linear;
@@ -33,11 +33,57 @@
 @keyframes defilement-rtl {
     0% {
         transform: translate3d(0, 0, 0);
-        /* position initiale à droite */
+        /* position initiale ï¿½ droite */
     }
-
     100% {
         transform: translate3d(0, -100%, 0);
-        /* position finale à gauche */
+        /* position finale ï¿½ gauche */
     }
+}
+
+h1 {
+    margin-top: 5%;
+}
+
+body {
+    overflow: hidden;
+}
+
+#retour {
+    width: 10vw;
+    margin: 0;
+}
+
+.home {
+    border-top: 1px solid #f0f0f0;
+    background: #05131c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9c3e3e), to(#05131c));
+    background: -webkit-linear-gradient(top, #9c3e3e, #05131c);
+    background: -moz-linear-gradient(top, #9c3e3e, #05131c);
+    background: -ms-linear-gradient(top, #9c3e3e, #05131c);
+    background: -o-linear-gradient(top, #9c3e3e, #05131c);
+    padding: 12.5px 25px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.home:hover {
+    border-top-color: #ffffff;
+    background: #ffffff;
+    color: #000000;
+}
+
+.home:active {
+    border-top-color: #5c1b1b;
+    background: #5c1b1b;
 }

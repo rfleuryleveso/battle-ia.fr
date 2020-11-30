@@ -85,6 +85,7 @@ section#intro>div#particlerenderer {
     bottom: 0;
 }
 
+
 /*section#intro > div.scrolldown-container {
   position: relative;
   width: 100%;
@@ -176,8 +177,6 @@ section#download_section {
     text-align: center;
 }
 
-
-
 section#download_section>p {
     margin: 0 0 25px 0;
     font-weight: 300;
@@ -194,7 +193,6 @@ section#download_section>h3 {
     text-transform: uppercase;
 }
 
-
 #download_section>h3>a {
     color: white;
     text-decoration: underline;
@@ -206,12 +204,31 @@ section#download_section>h3 {
     color: rgb(201, 201, 201);
 }
 
+section#mods_section {
+    padding: 10vh 10vw;
+    box-sizing: border-box;
+    text-align: center;
+}
 
+section#mods_section>p {
+    margin: 0 0 25px 0;
+    font-weight: 300;
+    text-align: justify;
+}
 
+section#mods_section>h2 {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+}
 
+section#mods_section>h3 {
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+    text-align: left;
+}
 
-
-foot>hr {
+footer>hr {
     border-bottom: black;
 }
 
@@ -220,7 +237,7 @@ foot>hr {
     font-size: 80%;
 }
 
-foot {
+footer {
     background: #161a1d;
     padding-top: 0.5%;
     color: aliceblue;
@@ -239,7 +256,6 @@ foot {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
-
 }
 
 #footAEnd>div {
