@@ -1,5 +1,5 @@
 const SPRITE = new Image();
-SPRITE.src = "./assets/img/iconne.png";
+SPRITE.src = "./assets/img/idebile.png";
 //SPRITE.width = 100;
 //SPRITE.height = 100;
 
@@ -75,8 +75,8 @@ const addDino = () => {
         dinoDef.angle = Math.random() * Math.PI;
     } else {
         // FROM RIGHT
-        dinoDef.sy = window.innerHeight * Math.random();
-        dinoDef.sx = window.innerWidth;
+        dinoDef.sx = window.innerHeight * Math.random();
+        dinoDef.sy = window.innerWidth;
         dinoDef.angle = Math.PI * 0.5 + Math.random() * Math.PI;
     }
     dinoDef.x = dinoDef.sx;
@@ -86,8 +86,8 @@ const addDino = () => {
     canvas.height = 50;
     canvas.style.pointerEvents = "none";
     canvas.style.position = "absolute";
-    canvas.style.left = dinoDef.x + "px";
-    canvas.style.top = dinoDef.y + "px";
+    canvas.style.left = dinoDef.y + "px";
+    canvas.style.top = dinoDef.x + "px";
     canvas.style.transform = "rotate(" + dinoDef.angle * (180 / Math.PI) + "deg)";
     dinoBg.appendChild(canvas);
     var ctx = canvas.getContext("2d");
@@ -106,15 +106,15 @@ const addDino = () => {
             47
         );
         requestAnimationFrame(render);
-        canvas.style.left = dinoDef.x + "px";
-        canvas.style.top = dinoDef.y + "px";
+        canvas.style.left = dinoDef.y + "px";
+        canvas.style.top = dinoDef.x + "px";
     };
 
     requestAnimationFrame(render);
 
     const tick = setInterval(() => {
-        dinoDef.x += Math.cos(dinoDef.angle) * 5;
-        dinoDef.y += Math.sin(dinoDef.angle) * 5;
+        dinoDef.y += Math.cos(dinoDef.angle) * 5;
+        dinoDef.x += Math.sin(dinoDef.angle) * 5;
 
         if (
             dinoDef.x + 44 < 0 ||
