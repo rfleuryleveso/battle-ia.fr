@@ -1,0 +1,31 @@
+    h1 {
+        margin-top: 5%;
+    }
+    
+    #retour {
+        position: absolute;
+        width: 10vw;
+        margin: 10px;
+        margin-left: 20px;
+    }
+    
+    .home {
+        color: white;
+        font-weight: 600;
+        margin: 1%;
+    }
+    
+    h1 {
+        margin-top: 5%;
+    }
+    
+    body>p>a {
+        color: white;
+    }
+    
+    #retour {
+        position: relative;
+        width: 10vw;
+        margin: 10px;
+        margin-left: 20px;
+    }

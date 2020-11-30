@@ -272,3 +272,41 @@ footer {
     text-decoration: none;
     color: rgb(143, 142, 142);
 }
+
+.cards {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: auto auto auto;
+}
+
+.card {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    margin: auto;
+    position: relative;
+    display: block;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-bg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.card-text {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 200px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    z-index: 999;
+    text-align: center;
+}
